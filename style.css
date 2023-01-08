@@ -1,0 +1,18 @@
+body {
+    margin: 0%;
+}
+
+.headercontainer {
+    width: 100vw;
+    height: 25vw;
+    background-image: url('images/bg-desktop-dark.jpg');
+    background-size: cover;
+    padding-top: 5vh;
+}
+
+.todo {
+    position: relative;
+    color: white;
+    padding-left: 20%;
+}
+
