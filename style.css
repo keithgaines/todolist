@@ -1,5 +1,7 @@
 body {
     margin: 0%;
+    background-color: hsl(234, 11%, 52%);
+    font-size: 18px;
 }
 
 .headercontainer {
@@ -8,11 +10,19 @@ body {
     background-image: url('images/bg-desktop-dark.jpg');
     background-size: cover;
     padding-top: 5vh;
+
 }
 
-.todo {
-    position: relative;
+.todo h1, img {
+    display: inline-block;
+}
+
+.todo h1 {
     color: white;
-    padding-left: 20%;
+    padding-left: 25%;
+}
+
+.todo img {
+    padding-left: 30%;
 }
 
