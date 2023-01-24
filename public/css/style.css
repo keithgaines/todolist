@@ -35,6 +35,7 @@ input {
     width: 80vw;  
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .item {
@@ -53,7 +54,7 @@ input {
   
   input:checked+p {
     text-decoration: line-through;
-    text-decoration-color: #A683E3;
+    text-decoration-color: hsl(235, 21%, 11%);
   }
   
 .additem form {
@@ -67,5 +68,6 @@ input {
     font-size: x-large;
     background-color: hsl(235, 24%, 19%);
     border-radius: 0;
+    color: hsl(234, 39%, 85%);
 
 }

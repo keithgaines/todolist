@@ -26,14 +26,10 @@ const item1 = new Item({
 });
 
 const item2 = new Item({
-  name: "Hit the + button to add a new item."
-});
-
-const item3 = new Item({
   name: "<-- Hit this to delete an item."
 });
 
-const defaultItems = [item1, item2, item3];
+const defaultItems = [item1, item2];
 
 const listSchema = {
   name: String,
@@ -63,30 +59,6 @@ app.get("/", function(req, res) {
 
 });
 
-app.get("/:customListName", function(req, res){
-  const customListName = _.capitalize(req.params.customListName);
-
-  List.findOne({name: customListName}, function(err, foundList){
-    if (!err){
-      if (!foundList){
-        //Create a new list
-        const list = new List({
-          name: customListName,
-          items: defaultItems
-        });
-        list.save();
-        res.redirect("/" + customListName);
-      } else {
-        //Show an existing list
-
-        res.render("list", {listTitle: foundList.name, newListItems: foundList.items});
-      }
-    }
-  });
-
-
-
-});
 
 app.post("/", function(req, res){
 
@@ -101,11 +73,7 @@ app.post("/", function(req, res){
     item.save();
     res.redirect("/");
   } else {
-    List.findOne({name: listName}, function(err, foundList){
-      foundList.items.push(item);
-      foundList.save();
-      res.redirect("/" + listName);
-    });
+
   }
 });
 
