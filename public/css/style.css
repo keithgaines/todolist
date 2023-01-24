@@ -29,7 +29,6 @@ body {
 
 input {
     width: 40%;
-    height: 25px;
 }
 
 .container, .additem {
@@ -64,7 +63,7 @@ input {
 
 .additem input {
     width: 80vw;
-    height: 10vw;
+    height: 70px;
     font-size: x-large;
     background-color: hsl(235, 24%, 19%);
     border-radius: 0;
