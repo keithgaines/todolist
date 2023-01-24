@@ -1,6 +1,6 @@
 body {
     margin: 0%;
-    background-color: black;
+    background-color: hsl(235, 21%, 11%);
     font-size: 18px;
 }
 
@@ -19,11 +19,11 @@ body {
 
 .todo h1 {
     color: white;
-    padding-left: 25%;
+    padding-left: 10vw;
 }
 
 .todo img {
-    padding-left: 30%;
+    padding-left: 50vw;
 }
 
 input {
@@ -41,10 +41,10 @@ input {
     min-height: 70px;
     display: flex;
     align-items: center;
-    border: 1px solid #F1F1F1;
+    border: 1px solid hsl(234, 14%, 35%);
     width: 70vw;
     padding: 10px;
-    background-color: grey;
+    background-color: hsl(235, 24%, 19%);
   }
   
   .item:last-child {
@@ -56,12 +56,6 @@ input {
     text-decoration-color: #A683E3;
   }
   
-  input[type="checkbox"] {
-    margin: 20px;
-  }
-
-
-
 .additem form {
     justify-content: center;
     border-radius: 0%;
@@ -71,7 +65,7 @@ input {
     width: 80vw;
     height: 10vw;
     font-size: x-large;
-    background-color: grey;
+    background-color: hsl(235, 24%, 19%);
     border-radius: 0;
 
 }
