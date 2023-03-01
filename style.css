@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    margin: 0%;
+    background-color: hsl(235, 21%, 11%);
+    font-size: 18px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.header {
+    width: 100vw;
+    height: 200px;
+    background-image: url('./images/bg-desktop-dark.jpg');
+    background-size: cover;
+    padding-top: 5vh;
+    position: relative;
+}
+
+.header h1 {
+    margin-left: 20%;
+}
+
+#form {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 60%;
+}
+
+.input {
+    width: 65vw;
+    height: 48px;
+    background-color: #25273D;
+    color: #767992;
+    position: absolute;
+    top: 20%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .todos {
+    list-style-type: none;
+    background-color: #25273D;
+    color: #767992;
+    margin: 0;
+    padding: 0;
+    width: 65vw;
+    height: 40vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 33%;
+  }
+  
+  
+  .todos li {
+    border-top: 1px solid;
+    cursor: pointer;
+    padding: 1rem 2rem;
+  }
+  
+  .todos li.completed {
+    color: #393A4B;
+    text-decoration: line-through;
+  }
+  
+  .small {
+    color: #767992;
+    text-align: center;
+    margin-top: 85%;
+  }
+  
