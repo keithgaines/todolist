@@ -83,3 +83,27 @@ body {
     padding-top: 40%;
   }
   
+  @media (min-width: 720px) {
+    .input {
+      width: 60vw;
+      height: 48px;
+      position: absolute;
+      top: 20%;
+  }
+
+  .todos {
+    width: 60vw;
+    max-height: 40vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 30%;
+  }
+
+  .small {
+    color: #767992;
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+  }
+
+  }
