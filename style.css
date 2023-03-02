@@ -39,7 +39,7 @@ body {
     background-color: #25273D;
     color: #767992;
     position: absolute;
-    top: 20%;
+    top: 15%;
 }
 
 .form {
@@ -57,10 +57,10 @@ body {
     margin: 0;
     padding: 0;
     width: 65vw;
-    height: 40vh;
+    max-height: 65vh;
     overflow-y: scroll;
     position: absolute;
-    top: 33%;
+    top: 25%;
   }
   
   
@@ -78,6 +78,8 @@ body {
   .small {
     color: #767992;
     text-align: center;
-    margin-top: 85%;
+    position: relative;
+    margin-top: 99%;
+    padding-top: 40%;
   }
   
